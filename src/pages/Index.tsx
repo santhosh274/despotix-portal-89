@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { EventCard } from "@/components/EventCard";
-import { EventModal } from "@/components/EventModal";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,17 +10,18 @@ import { schedule } from "@/data/schedule";
 import { Calendar, MapPin, Phone, Mail, Users, Trophy, AlertTriangle } from "lucide-react";
 
 const Index = () => {
-  const [selectedEvent, setSelectedEvent] = useState<typeof events[0] | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleEventClick = (event: typeof events[0]) => {
-    setSelectedEvent(event);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedEvent(null);
+    const eventRoutes: Record<string, string> = {
+      "Techscribe": "/events/techscribe",
+      "PixelCraft": "/events/pixelcraft",
+      "CodeQuest": "/events/codequest",
+      "BrainChain": "/events/brainchain",
+      "Huntrix": "/events/huntrix"
+    };
+    
+    navigate(eventRoutes[event.name]);
   };
 
   return (
@@ -358,12 +358,6 @@ const Index = () => {
         </footer>
       </div>
 
-      {/* Event Modal */}
-      <EventModal 
-        event={selectedEvent}
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-      />
     </div>
   );
 };
