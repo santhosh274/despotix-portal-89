@@ -24,7 +24,7 @@ export const coordinators = [
     name: "Jessica D",
     role: "Symposium Coordinator",
     phone: "-", 
-    email: "priya.s@saec.edu.in",
+    email: "2323026@saec.ac.in",
     image: "/placeholder-avatar.png"
   }
   
