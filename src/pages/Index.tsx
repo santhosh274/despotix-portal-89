@@ -235,7 +235,7 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Student Coordinators
+              Coordinators
             </motion.h3>
             <motion.p 
               className="text-center text-muted-foreground mb-12"
