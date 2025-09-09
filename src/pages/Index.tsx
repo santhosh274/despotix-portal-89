@@ -47,7 +47,7 @@ const Index = () => {
             >
               
               <div className="w-10 h-10 bg-primary/50 rounded-lg" />
-              <img src={logo} alt="logo className="w-15 h-15" />
+              <img src={logo} alt="logo" className="w-15 h-15" />
             </motion.div>
             
             <motion.h1 
