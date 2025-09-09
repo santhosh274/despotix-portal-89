@@ -181,7 +181,7 @@ const PixelCraft = () => {
                   asChild
                 >
                   <a 
-                    href="https://forms.gle/aWRFvbKZk5gFnxTNA" 
+                    href="https://forms.gle/HnewXiLFKE82omNu6" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
