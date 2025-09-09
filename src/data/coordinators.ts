@@ -1,30 +1,31 @@
 export const coordinators = [
   {
-    name: "Arjun Krishnan",
-    role: "Event Coordinator",
-    phone: "+91 98765 43210",
-    email: "arjun.k@saec.edu.in",
+    name: "Dr. Ahmed Mudassar Ali",
+    role: "Head of Department",
+    phone: "+91 98401 89744",
+    email: "ahmedmudassarali@saec.ac.in", 
     image: "/placeholder-avatar.png"
   },
   {
-    name: "Priya Sharma",
-    role: "Technical Lead", 
-    phone: "+91 87654 32109",
+    name: "Mrs. D Chithra",
+    role: "Faculty Coordinator",
+    phone: "+91 98409 38233", 
+    email: "chithrad@saec.ac.in",
+    image: "/placeholder-avatar.png"
+  },  
+  {
+    name: "Sriharish S",
+    role: "Symposium Coordinator",
+    phone: "+91 81221 47725",
+    email: "2323052@saec.ac.in",
+    image: "/placeholder-avatar.png"
+  },
+  {
+    name: "Jessica D",
+    role: "Symposium Coordinator",
+    phone: "-", 
     email: "priya.s@saec.edu.in",
     image: "/placeholder-avatar.png"
-  },
-  {
-    name: "Rahul Patel",
-    role: "Registration Head",
-    phone: "+91 76543 21098", 
-    email: "rahul.p@saec.edu.in",
-    image: "/placeholder-avatar.png"
-  },
-  {
-    name: "Sneha Reddy",
-    role: "Public Relations",
-    phone: "+91 65432 10987",
-    email: "sneha.r@saec.edu.in", 
-    image: "/placeholder-avatar.png"
   }
+  
 ];

@@ -44,7 +44,9 @@ const Index = () => {
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ duration: 0.3 }}
             >
+              
               <div className="w-10 h-10 bg-primary/50 rounded-lg" />
+              <img src="/logo.png" alt="logo" className="w-15 h-15" />
             </motion.div>
             
             <motion.h1 
@@ -309,8 +311,9 @@ const Index = () => {
                   <div className="space-y-2 text-muted-foreground">
                     <p><strong>College:</strong> S.A. Engineering College</p>
                     <p><strong>Department:</strong> Information Technology</p>
-                    <p><strong>Address:</strong> Thirumalaikodi, Vellore, Tamil Nadu</p>
+                    <p><strong>Address:</strong> Poonamallee-Avadi Road, Thiruverkadu, Chennai, Tamil Nadu</p>
                     <p><strong>Date:</strong> September 26, 2025</p>
+                    <p className="font-orbitron text-primary mb-4 flex items-center gap-2"><strong><a href="https://maps.app.goo.gl/q6ALUZJHsWCxfr3S6" target="_blank" rel="noopener noreferrer">View in Google Maps</a></strong></p>
                   </div>
                 </Card>
               </motion.div>
@@ -327,10 +330,10 @@ const Index = () => {
                     Get in Touch
                   </h4>
                   <div className="space-y-2 text-muted-foreground">
-                    <p><strong>Email:</strong> despotix2k25@saec.edu.in</p>
-                    <p><strong>Phone:</strong> +91 98765 43210</p>
-                    <p><strong>Website:</strong> www.saec.edu.in</p>
-                    <p><strong>Follow us:</strong> @despotix2k25</p>
+                    <p><strong>Email:</strong> despotix2k25@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 81221 47725</p>
+                    <p><strong>Website:</strong> www.saec.ac.in</p>
+                    <p><strong>Follow us:</strong><a className="font-orbitron font-bold text-primary mb-4 flex items-center gap-2" href="https://www.instagram.com/despotix__2k25?igsh=d3RiNWR0czB6YTFn">@despotix2k25</a></p>
                   </div>
                 </Card>
               </motion.div>

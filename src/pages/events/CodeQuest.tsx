@@ -181,7 +181,7 @@ const CodeQuest = () => {
                   asChild
                 >
                   <a 
-                    href="https://forms.google.com/codequest-2k25" 
+                    href="https://forms.gle/Arn7GsVF27ZaMG7J6" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

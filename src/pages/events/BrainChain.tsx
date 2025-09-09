@@ -181,7 +181,7 @@ const BrainChain = () => {
                   asChild
                 >
                   <a 
-                    href="https://forms.google.com/brainchain-2k25" 
+                    href="https://forms.gle/KXUic2FcvPiPySz47" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

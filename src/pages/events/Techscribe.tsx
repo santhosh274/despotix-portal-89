@@ -181,7 +181,7 @@ const Techscribe = () => {
                   asChild
                 >
                   <a 
-                    href="https://forms.google.com/techscribe-2k25" 
+                    href="https://forms.gle/FEFThPcDsD9dEP1M6" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

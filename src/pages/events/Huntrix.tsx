@@ -181,7 +181,7 @@ const Huntrix = () => {
                   asChild
                 >
                   <a 
-                    href="https://forms.google.com/huntrix-2k25" 
+                    href="https://forms.gle/YkEHs29GugrtrSos5" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
