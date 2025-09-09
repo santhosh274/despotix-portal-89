@@ -8,6 +8,7 @@ import { events } from "@/data/events";
 import { coordinators } from "@/data/coordinators";
 import { schedule } from "@/data/schedule";
 import { Calendar, MapPin, Phone, Mail, Users, Trophy, AlertTriangle } from "lucide-react";
+import logo from '/logo.png';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ const Index = () => {
             >
               
               <div className="w-10 h-10 bg-primary/50 rounded-lg" />
-              <img src="/logo.png" alt="logo" className="w-15 h-15" />
+              <img src={logo} alt="logo className="w-15 h-15" />
             </motion.div>
             
             <motion.h1 
