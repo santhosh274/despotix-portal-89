@@ -55,7 +55,7 @@ const BrainChain = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Connect the dots in our exciting connections game!
+                An adventurous treasure-hunt inspired game of logic and clues!
               </motion.p>
             </div>
           </div>
@@ -78,60 +78,53 @@ const BrainChain = () => {
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">About the Event</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Connect the dots in our exciting connections game! Exercise your logical thinking 
-                        and pattern recognition skills as you find hidden links between seemingly unrelated 
-                        concepts and ideas.
+                        Solve challenging clues step by step in a thrilling race against time.
+                        Test your teamwork, logic, and problem-solving skills to reach the final destination first!
                       </p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">Format</h3>
-                      <p className="text-muted-foreground">Connections & Logic Puzzle Game</p>
+                      <p className="text-muted-foreground">Treasure Hunt / Logical Clue Solving</p>
                     </div>
                     
                     <div>
-                      <h3 className="font-orbitron font-semibold text-accent mb-2">Duration</h3>
-                      <p className="text-muted-foreground">60 minutes (Multiple rounds)</p>
+                      <h3 className="font-orbitron font-semibold text-accent mb-2">Timing</h3>
+                      <p className="text-muted-foreground">11:00 AM – 12:30 PM</p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">Team Size</h3>
-                      <p className="text-muted-foreground">Team of 2-4 members</p>
+                      <p className="text-muted-foreground">Up to 4 participants per team</p>
                     </div>
                   </div>
                 </Card>
               </motion.div>
 
-              {/* Guidelines & Rules */}
+              {/* Rules & Regulations */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <Card className="card-cosmic p-8 h-full">
-                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">How to Play</h2>
+                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">Rules & Regulations</h2>
                   
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Find connections between 16 given words/concepts</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Group words into 4 categories with 4 items each</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Categories can be anything: themes, wordplay, synonyms</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Some connections might have multiple valid interpretations</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Points awarded for correct groups and speed</p>
-                    </div>
+                    {[
+                      "A team can consist of 4 participants.",
+                      "Clues must be solved in sequence. Skipping or tampering with clues is prohibited.",
+                      "No external help (other teams, bystanders, or internet) unless permitted.",
+                      "Mobile phones strictly prohibited.",
+                      "Follow safety guidelines and stay within the designated area.",
+                      "The first team to solve all clues and reach the final destination wins.",
+                      "Judge's decision will be final."
+                    ].map((rule, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                        <p className="text-muted-foreground">{rule}</p>
+                      </div>
+                    ))}
                   </div>
                 </Card>
               </motion.div>
@@ -153,13 +146,13 @@ const BrainChain = () => {
               <Card className="card-cosmic p-6 text-center">
                 <MapPin className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Venue</h3>
-                <p className="text-muted-foreground">Activity Hall C</p>
+                <p className="text-muted-foreground">IT Block</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">₹8,000 Prize Pool</p>
+                <p className="text-muted-foreground">₹2,000+ Prize Pool</p>
               </Card>
             </motion.div>
 
@@ -171,9 +164,9 @@ const BrainChain = () => {
               transition={{ duration: 0.8, delay: 1.3 }}
             >
               <Card className="card-cosmic p-8 max-w-2xl mx-auto">
-                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Ready to Connect?</h2>
+                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Think You Can Crack It?</h2>
                 <p className="text-muted-foreground mb-6">
-                  Challenge your logical thinking and pattern recognition skills
+                  Form your team, follow the trail of clues, and race to the finish!
                 </p>
                 <Button 
                   size="lg"

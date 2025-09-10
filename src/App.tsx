@@ -11,6 +11,7 @@ import PixelCraft from "./pages/events/PixelCraft";
 import CodeQuest from "./pages/events/CodeQuest";
 import BrainChain from "./pages/events/BrainChain";
 import Huntrix from "./pages/events/Huntrix";
+import Secret from "./pages/events/secret";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/events/codequest" element={<CodeQuest />} />
           <Route path="/events/brainchain" element={<BrainChain />} />
           <Route path="/events/huntrix" element={<Huntrix />} />
+          <Route path="/events/secret" element={<Secret />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

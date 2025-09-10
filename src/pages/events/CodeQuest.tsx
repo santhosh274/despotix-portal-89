@@ -159,7 +159,7 @@ const CodeQuest = () => {
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">₹10,000 Prize Pool</p>
+                <p className="text-muted-foreground">₹2,000+ Prize Pool</p>
               </Card>
             </motion.div>
 
