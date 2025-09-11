@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ParticleBackground } from "@/components/ParticleBackground";
-import { ArrowLeft, Palette, Calendar, MapPin, Trophy, Users, ExternalLink } from "lucide-react";
+import { ArrowLeft, Palette, Calendar, MapPin, Trophy, Users, ExternalLink, Clock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const PixelCraft = () => {
@@ -55,7 +55,7 @@ const PixelCraft = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Design the future with our UI/UX design competition
+                A live UI/UX design competition — bring your creativity to life in Figma.
               </motion.p>
             </div>
           </div>
@@ -65,6 +65,7 @@ const PixelCraft = () => {
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              
               {/* Event Details */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -78,25 +79,29 @@ const PixelCraft = () => {
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">About the Event</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Design the future with our UI/UX design competition. Create stunning user interfaces 
-                        and exceptional user experiences using modern design principles. Show your creativity 
-                        and technical design skills.
+                        Compete in a hands-on UI/UX design challenge where you’ll solve a problem statement 
+                        provided on-site. Use your creativity, design skills, and problem-solving abilities 
+                        to craft functional and beautiful interfaces.
                       </p>
                     </div>
                     
                     <div>
-                      <h3 className="font-orbitron font-semibold text-primary mb-2">Format</h3>
-                      <p className="text-muted-foreground">Design Competition with Live Presentation</p>
-                    </div>
-                    
-                    <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Duration</h3>
-                      <p className="text-muted-foreground">3 hours design + 10 minutes presentation</p>
+                      <p className="text-muted-foreground">
+                        2 hours (15 min briefing + 15 min framework + 1.5 hr design work)
+                      </p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Team Size</h3>
                       <p className="text-muted-foreground">Individual or team of 2 members</p>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-orbitron font-semibold text-primary mb-2">Design Scope</h3>
+                      <p className="text-muted-foreground">
+                        Your design can be framed either for a <strong>website</strong> or a <strong>mobile application</strong>.
+                      </p>
                     </div>
                   </div>
                 </Card>
@@ -112,26 +117,14 @@ const PixelCraft = () => {
                   <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">Guidelines & Rules</h2>
                   
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Design problem statement will be provided on-site</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Use any design tool (Figma, Adobe XD, Sketch, etc.)</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Focus on both UI aesthetics and UX functionality</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Include user personas and design rationale</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Evaluation based on creativity, usability, and presentation</p>
-                    </div>
+                    <Rule text="Only Figma is permitted for all design work" />
+                    <Rule text="No other design tools or platforms allowed" />
+                    <Rule text="Pre-made templates or UI kits are strictly disallowed" />
+                    <Rule text="AI-generated designs are not allowed" />
+                    <Rule text="External assistance will result in disqualification" />
+                    <Rule text="Submission must include at least 3 pages (Landing, Feature, Contact)" />
+                    <Rule text="Final designs must be submitted via a public Figma link before deadline" />
+                    <Rule text="No late submissions accepted" />
                   </div>
                 </Card>
               </motion.div>
@@ -153,13 +146,15 @@ const PixelCraft = () => {
               <Card className="card-cosmic p-6 text-center">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Venue</h3>
-                <p className="text-muted-foreground">Design Lab B</p>
+                <p className="text-muted-foreground">IT Block</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">₹2,000+ Prize Pool</p>
+                <p className="text-muted-foreground">
+                ₹2,000+ prize pool
+                </p>
               </Card>
             </motion.div>
 
@@ -199,5 +194,13 @@ const PixelCraft = () => {
     </div>
   );
 };
+
+/* Helper component for consistent rule styling */
+const Rule = ({ text }) => (
+  <div className="flex items-start gap-3">
+    <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+    <p className="text-muted-foreground">{text}</p>
+  </div>
+);
 
 export default PixelCraft;
