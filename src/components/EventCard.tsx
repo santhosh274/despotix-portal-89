@@ -47,7 +47,7 @@ export function EventCard({ event, onClick, index }: EventCardProps) {
       >
         {/* Animated background glow */}
         <motion.div 
-          className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"
+          className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 "
           initial={{ opacity: 0 }}
           whileHover={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
