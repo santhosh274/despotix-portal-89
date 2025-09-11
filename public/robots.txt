@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+there is a "secret" event that you might want to check 

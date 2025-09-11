@@ -360,13 +360,11 @@ const Index = () => {
               © 2025 DESPOTIX 2K25 - S.A. ENGINEERING COLLEGE
             </p>
             <p className="text-xs text-white/5 italic tracking-wide hover:text-white/40 transition duration-500 select-none">For those who dare, may find what they seek.</p>
-            //why are you wandering here dude 
-            //there is a SECRET event
           </div>
         </footer>
       </div>
-
     </div>
+    
   );
 };
 
