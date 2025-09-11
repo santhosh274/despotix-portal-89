@@ -19,7 +19,7 @@ const Index = () => {
       "PixelCraft": "/events/pixelcraft",
       "CodeQuest": "/events/codequest",
       "BrainChain": "/events/brainchain",
-      "secret": "/events/secret",
+      "Secret": "/events/secret",
       "Huntrix": "/events/huntrix"
     };
     
