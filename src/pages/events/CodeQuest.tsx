@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ParticleBackground } from "@/components/ParticleBackground";
-import { ArrowLeft, Zap, Calendar, MapPin, Trophy, Users, ExternalLink } from "lucide-react";
+import { ArrowLeft, Zap, Calendar, MapPin, Trophy, Users, ExternalLink, ClipboardList } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CodeQuest = () => {
@@ -42,7 +42,7 @@ const CodeQuest = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                CODEQUEST
+                CODEQUEST <br/> <p className="text-3xl">(Technical Quiz)</p>
               </motion.h1>
               
               <Badge className="bg-primary/20 text-primary border-primary/30 mb-4">
@@ -90,48 +90,41 @@ const CodeQuest = () => {
                     </div>
                     
                     <div>
-                      <h3 className="font-orbitron font-semibold text-primary mb-2">Duration</h3>
-                      <p className="text-muted-foreground">90 minutes (3 rounds)</p>
+                      <h3 className="font-orbitron font-semibold text-primary mb-2">Rounds</h3>
+                      <p className="text-muted-foreground">
+                        Round 1: 20 Questions <br />
+                        Round 2: 15 Questions (shortlisted students)
+                      </p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Team Size</h3>
-                      <p className="text-muted-foreground">Team of 2-3 members</p>
+                      <p className="text-muted-foreground">2–3 members per team</p>
                     </div>
                   </div>
                 </Card>
               </motion.div>
 
-              {/* Guidelines & Rules */}
+              {/* Rules & Guidelines */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <Card className="card-cosmic p-8 h-full">
-                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">Quiz Topics</h2>
+                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6 flex items-center gap-2">
+                    <ClipboardList className="h-6 w-6 text-primary" />
+                    Rules & Guidelines
+                  </h2>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Data Structures and Algorithms</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Web Development (Frontend & Backend)</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Database Management Systems</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Artificial Intelligence & Machine Learning</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Emerging Technologies (Blockchain, IoT, Cloud)</p>
-                    </div>
+                  <div className="space-y-4 text-muted-foreground">
+                    <p>1. Teams: 2–3 teams will participate.</p>
+                    <p>2. Rounds: Round 1 (20 Qs), Round 2 (15 Qs – shortlisted).</p>
+                    <p>3. Time Limit: 20 seconds per question.</p>
+                    <p>4. Question Type: Multiple Choice Questions (MCQs).</p>
+                    <p>5. No External Help: Phones, notes, or internet not allowed.</p>
+                    <p>6. Tie-Breaker: Extra questions will decide the winner.</p>
+                    <p>7. Final Authority: Judge’s decision will be final.</p>
                   </div>
                 </Card>
               </motion.div>

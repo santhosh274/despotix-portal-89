@@ -42,7 +42,7 @@ const BrainChain = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                BRAINCHAIN
+                BRAINCHAIN <br/> <p className="text-3xl">(Connection)</p>
               </motion.h1>
               
               <Badge className="bg-accent/20 text-accent border-accent/30 mb-4">

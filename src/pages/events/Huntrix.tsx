@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ParticleBackground } from "@/components/ParticleBackground";
-import { ArrowLeft, Search, Calendar, MapPin, Trophy, Users, ExternalLink } from "lucide-react";
+import { ArrowLeft, Brain, Calendar, MapPin, Trophy, Users, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Huntrix = () => {
@@ -33,7 +33,7 @@ const Huntrix = () => {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
               >
-                <Search className="h-12 w-12 text-accent" />
+                <Brain className="h-12 w-12 text-accent" />
               </motion.div>
               
               <motion.h1 
@@ -42,7 +42,7 @@ const Huntrix = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                HUNTRIX
+                HUNTRIX <br/> <p className="text-3xl">(Connection)</p>
               </motion.h1>
               
               <Badge className="bg-accent/20 text-accent border-accent/30 mb-4">
@@ -55,7 +55,7 @@ const Huntrix = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Embark on an epic treasure hunt adventure!
+                An adventurous treasure-hunt inspired game of logic and clues!
               </motion.p>
             </div>
           </div>
@@ -78,60 +78,53 @@ const Huntrix = () => {
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">About the Event</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Embark on an epic treasure hunt adventure! Solve clues, decode puzzles, and navigate 
-                        through challenges to discover hidden treasures. Perfect for team building and 
-                        problem-solving enthusiasts.
+                        Solve challenging clues step by step in a thrilling race against time.
+                        Test your teamwork, logic, and problem-solving skills to reach the final destination first!
                       </p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">Format</h3>
-                      <p className="text-muted-foreground">Interactive Treasure Hunt Competition</p>
+                      <p className="text-muted-foreground">Treasure Hunt / Logical Clue Solving</p>
                     </div>
                     
                     <div>
-                      <h3 className="font-orbitron font-semibold text-accent mb-2">Duration</h3>
-                      <p className="text-muted-foreground">2 hours campus-wide adventure</p>
+                      <h3 className="font-orbitron font-semibold text-accent mb-2">Timing</h3>
+                      <p className="text-muted-foreground">11:00 AM – 12:30 PM</p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-accent mb-2">Team Size</h3>
-                      <p className="text-muted-foreground">Team of 3-5 members</p>
+                      <p className="text-muted-foreground">Up to 4 participants per team</p>
                     </div>
                   </div>
                 </Card>
               </motion.div>
 
-              {/* Guidelines & Rules */}
+              {/* Rules & Regulations */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
               >
                 <Card className="card-cosmic p-8 h-full">
-                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">Hunt Guidelines</h2>
+                  <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-6">Rules & Regulations</h2>
                   
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Follow clues to navigate different campus locations</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Solve puzzles at each checkpoint to proceed</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Use creativity and teamwork to overcome challenges</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">First team to reach the final treasure wins</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <p className="text-muted-foreground">Bonus points for creative problem-solving approaches</p>
-                    </div>
+                    {[
+                      "A team can consist of 4 participants.",
+                      "Clues must be solved in sequence. Skipping or tampering with clues is prohibited.",
+                      "No external help (other teams, bystanders, or internet) unless permitted.",
+                      "Mobile phones strictly prohibited.",
+                      "Follow safety guidelines and stay within the designated area.",
+                      "The first team to solve all clues and reach the final destination wins.",
+                      "Judge's decision will be final."
+                    ].map((rule, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                        <p className="text-muted-foreground">{rule}</p>
+                      </div>
+                    ))}
                   </div>
                 </Card>
               </motion.div>
@@ -152,8 +145,8 @@ const Huntrix = () => {
               
               <Card className="card-cosmic p-6 text-center">
                 <MapPin className="h-8 w-8 text-accent mx-auto mb-3" />
-                <h3 className="font-orbitron font-semibold mb-2">Start Point</h3>
-                <p className="text-muted-foreground">Main Campus Gate</p>
+                <h3 className="font-orbitron font-semibold mb-2">Venue</h3>
+                <p className="text-muted-foreground">IT Block</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
@@ -171,9 +164,9 @@ const Huntrix = () => {
               transition={{ duration: 0.8, delay: 1.3 }}
             >
               <Card className="card-cosmic p-8 max-w-2xl mx-auto">
-                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Ready for the Hunt?</h2>
+                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Think You Can Crack It?</h2>
                 <p className="text-muted-foreground mb-6">
-                  Join us for an exciting adventure filled with puzzles and discoveries
+                  Form your team, follow the trail of clues, and race to the finish!
                 </p>
                 <Button 
                   size="lg"

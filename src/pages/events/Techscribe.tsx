@@ -42,7 +42,7 @@ const Techscribe = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                TECHSCRIBE
+                TECHSCRIBE <br/> <p className="text-3xl">(Paper presentation)</p>
               </motion.h1>
 
               <Badge className="bg-primary/20 text-primary border-primary/30 mb-4">
