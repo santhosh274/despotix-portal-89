@@ -141,7 +141,7 @@ const ClutchCarnival = () => {
               <Card className="card-cosmic p-6 text-center">
                 <Calendar className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Event Date</h3>
-                <p className="text-muted-foreground">September 27, 2025</p>
+                <p className="text-muted-foreground">September 26, 2025</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
