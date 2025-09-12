@@ -107,8 +107,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              Join us for an extraordinary symposium featuring cutting-edge technical competitions and engaging activities. 
-              Experience the future of technology and innovation.
+              Join us for an extraordinary symposium featuring cutting-edge technical competitions, thought-provoking challenges, engaging fun activities, and a vibrant showcase of innovation.
             </motion.p>
 
             {/* Participation Rules */}
@@ -333,10 +332,10 @@ const Index = () => {
                     Get in Touch
                   </h4>
                   <div className="space-y-2 text-muted-foreground">
-                    <p><strong>Email:</strong> despotix2k25@gmail.com</p>
+                    <p><strong>Email:</strong> despotix25saec@gmail.com</p>
                     <p><strong>Phone:</strong> +91 81221 47725</p>
                     <p><strong>Website:</strong> www.saec.ac.in</p>
-                    <p><strong>Follow us:</strong><a className="font-orbitron font-bold text-primary mb-4 flex items-center gap-2" href="https://www.instagram.com/despotix__2k25?igsh=d3RiNWR0czB6YTFn">@despotix2k25</a></p>
+                    <p><strong>Follow us:</strong><a className="font-orbitron font-bold text-primary mb-4 flex items-center gap-2" href="https://www.instagram.com/despotix__2k25?igsh=d3RiNWR0czB6YTFn">@despotix__2k25</a></p>
                   </div>
                 </Card>
               </motion.div>

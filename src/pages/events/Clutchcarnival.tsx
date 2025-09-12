@@ -87,7 +87,7 @@ const ClutchCarnival = () => {
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Team Formation</h3>
-                      <p className="text-muted-foreground">Solo / Duo / Squad (depending on game)</p>
+                      <p className="text-muted-foreground">Squad </p>
                     </div>
                     
                     <div>

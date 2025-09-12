@@ -42,7 +42,7 @@ export const schedule = [
     type: "non-technical"
   },
   {
-    time: "11:00 AM - 3:00 PM",
+    time: "11:00 AM - 12.30 PM",
     event: "Huntrix (Treasure Hunt)",
     venue: "Campus Wide",
     type: "non-technical"
