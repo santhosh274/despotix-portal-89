@@ -15,6 +15,7 @@ interface EventCardProps {
   event: {
     name: string;
     category: string;
+    blurb?: string;
     description: string;
     registrationLink: string;
   };
@@ -77,6 +78,11 @@ export function EventCard({ event, onClick, index }: EventCardProps) {
           <h3 className="text-xl font-orbitron font-bold mb-2 text-cosmic">
             {event.name}
           </h3>
+          {event.blurb && (
+            <p className="text-xs text-muted-foreground mb-2">
+              {event.blurb}
+            </p>
+          )}
           
           <p className="text-muted-foreground text-sm leading-relaxed">
             {event.description.split(' ').slice(0, 12).join(' ')}...

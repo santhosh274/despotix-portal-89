@@ -6,7 +6,7 @@ import { ParticleBackground } from "@/components/ParticleBackground";
 import { ArrowLeft, Zap, Calendar, MapPin, Trophy, Users, ExternalLink, ClipboardList } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const BrainChain = () => {
+const ClutchCarnival = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
       <ParticleBackground />
@@ -42,11 +42,11 @@ const BrainChain = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                BRAINCHAIN <br/> <p className="text-3xl">(Non-Technical Event)</p>
+                CLUTCH CARNIVAL <br/> <p className="text-3xl">(BGMI Gaming Event)</p>
               </motion.h1>
               
               <Badge className="bg-primary/20 text-primary border-primary/30 mb-4">
-                Fun & Logic Event
+                Esports & Gaming Showdown
               </Badge>
               
               <motion.p 
@@ -55,7 +55,8 @@ const BrainChain = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                An engaging mix of games, quick thinking, and teamwork that will put your wit and creativity to the test!
+                Enter the battlefield of Clutch Carnival – a thrilling mix of gaming skills, strategy, 
+                and team spirit. Compete across popular titles and prove your clutch moments under pressure!
               </motion.p>
             </div>
           </div>
@@ -78,37 +79,32 @@ const BrainChain = () => {
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">About the Event</h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        BRAINCHAIN is a fun-packed, non-technical event designed to test your creativity, quick thinking, 
-                        and teamwork. Participate in exciting rounds filled with mini-games, movie-based challenges, and more!
+                        Clutch Carnival brings together gamers to compete in adrenaline-filled rounds. 
+                        From tactical shooters to battle royales, showcase your reflexes, teamwork, 
+                        and gaming prowess.
                       </p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Team Formation</h3>
-                      <p className="text-muted-foreground">2–3 members per team</p>
+                      <p className="text-muted-foreground">Solo / Duo / Squad (depending on game)</p>
                     </div>
                     
                     <div>
                       <h3 className="font-orbitron font-semibold text-primary mb-2">Participation</h3>
                       <p className="text-muted-foreground">
-                        First-come, first-served basis. Only 15–20 teams will be allowed.
+                        Limited slots – registration will close once capacity is reached.
                       </p>
                     </div>
                     
                     <div>
-                      <h3 className="font-orbitron font-semibold text-primary mb-2">Rounds</h3>
+                      <h3 className="font-orbitron font-semibold text-primary mb-2">Games & Rounds</h3>
                       <p className="text-muted-foreground">
-                        <strong>Round 1: Clash Carnival</strong> <br/>
-                        - Game 1: Back to Back (Draw from teammate’s description)<br/>
-                        - Game 2: Bet for the Topic (Challenge your teammate)<br/>
-                        - Game 3: Dialogues (Guess the movie)<br/>
-                        <br/>
-                        <strong>Round 2: Bioscope</strong> <br/>
-                        - Guess movies & songs from clips & stills.
+                        <strong>Rules and Events will be discussed in-person</strong>
                       </p>
                     </div>
                   </div>
-                </Card>
+                </Card> 
               </motion.div>
 
               {/* Rules & Guidelines */}
@@ -124,11 +120,12 @@ const BrainChain = () => {
                   </h2>
                   
                   <div className="space-y-4 text-muted-foreground">
-                    <p>1. Teams must consist of 2–3 members.</p>
-                    <p>2. Only the first 15–20 teams will be accepted (first-come, first-served).</p>
-                    <p>3. No mobile phones; only group discussion is allowed.</p>
-                    <p>4. Round 2 will use buzzers; first team to buzz gets to answer.</p>
-                    <p>5. Jury's decision is final.</p>
+                    <p>1. Participants must bring their own gaming devices (phones/headsets).</p>
+                    <p>2. Strictly no unfair means – any cheating/hacks will lead to disqualification.</p>
+                    <p>3. Matches will follow standard esports rules for each game.</p>
+                    <p>4. Be present 15 minutes before your scheduled round.</p>
+                    <p>5. WiFi / Internet will not be provided</p>
+                    <p>6. Judges’ and organizers’ decisions are final.</p>
                   </div>
                 </Card>
               </motion.div>
@@ -144,7 +141,7 @@ const BrainChain = () => {
               <Card className="card-cosmic p-6 text-center">
                 <Calendar className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Event Date</h3>
-                <p className="text-muted-foreground">September 26, 2025</p>
+                <p className="text-muted-foreground">September 27, 2025</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
@@ -156,7 +153,7 @@ const BrainChain = () => {
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">Exciting Cash Prize 🎁</p>
+                <p className="text-muted-foreground">Exciting Cash Pool🎁</p>
               </Card>
             </motion.div>
 
@@ -168,9 +165,9 @@ const BrainChain = () => {
               transition={{ duration: 0.8, delay: 1.3 }}
             >
               <Card className="card-cosmic p-8 max-w-2xl mx-auto">
-                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Think Fast, Act Smart!</h2>
+                <h2 className="text-2xl font-orbitron font-bold text-cosmic mb-4">Gear Up & Game On!</h2>
                 <p className="text-muted-foreground mb-6">
-                  Join BRAINCHAIN and experience a blend of fun, creativity, and teamwork.
+                  Join Clutch Carnival and prove you have what it takes to survive the battlefield.
                 </p>
                 <Button 
                   size="lg"
@@ -197,4 +194,4 @@ const BrainChain = () => {
   );
 };
 
-export default BrainChain;
+export default ClutchCarnival;

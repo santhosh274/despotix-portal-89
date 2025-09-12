@@ -42,7 +42,7 @@ const CodeQuest = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                CODEQUEST <br/> <p className="text-3xl">(Technical Quiz)</p>
+                CODEQUEST
               </motion.h1>
               
               <Badge className="bg-primary/20 text-primary border-primary/30 mb-4">
@@ -146,13 +146,13 @@ const CodeQuest = () => {
               <Card className="card-cosmic p-6 text-center">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Venue</h3>
-                <p className="text-muted-foreground">Auditorium</p>
+                <p className="text-muted-foreground">IT Block</p>
               </Card>
               
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">₹2,000+ Prize Pool</p>
+                <p className="text-muted-foreground">Exciting Cash Prize 🎁</p>
               </Card>
             </motion.div>
 

@@ -153,7 +153,7 @@ const PixelCraft = () => {
                 <Trophy className="h-8 w-8 text-primary mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
                 <p className="text-muted-foreground">
-                ₹2,000+ prize pool
+                Exciting Cash Prize 🎁
                 </p>
               </Card>
             </motion.div>

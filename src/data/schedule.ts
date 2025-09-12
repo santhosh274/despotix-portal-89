@@ -2,55 +2,61 @@ export const schedule = [
   {
     time: "9:00 AM - 9:30 AM",
     event: "Registration & Welcome",
-    venue: "Main Auditorium",
+    venue: "IT Auditorium",
     type: "general"
   },
   {
-    time: "9:30 AM - 10:00 AM", 
+    time: "9:30 AM - 10:30 AM", 
     event: "Opening Ceremony",
-    venue: "Main Auditorium",
+    venue: "IT Auditorium",
     type: "general"
   },
   {
-    time: "10:00 AM - 3:00 PM",
+    time: "11:00 AM - 3:00 PM",
     event: "Techscribe (Paper Presentation)",
-    venue: "Conference Hall A",
+    venue: "IT Block",
     type: "technical"
   },
   {
-    time: "10:00 AM - 3:00 PM",
+    time: "11:00 AM - 3:00 PM",
     event: "PixelCraft (UI/UX Design)",
-    venue: "Computer Lab 1", 
+    venue: "IT Block", 
     type: "technical"
   },
   {
-    time: "10:00 AM - 3:00 PM",
+    time: "12:30 PM - 1:30 PM",
     event: "Lunch Break",
     venue: "College Cafeteria",
     type: "general"
   },
   {
-    time: "10:00 AM - 3:00 PM",
+    time: "11:00 AM - 3:00 PM",
     event: "CodeQuest (Technical Quiz)",
-    venue: "Conference Hall B",
+    venue: "IT Block",
     type: "technical"
   },
   {
-    time: "10:00 AM - 3:00 PM", 
+    time: "11:00 AM - 3:00 PM", 
     event: "BrainChain (Connections)",
-    venue: "Seminar Hall",
+    venue: "IT Block",
     type: "non-technical"
   },
   {
-    time: "10:00 AM - 3:00 PM",
+    time: "11:00 AM - 3:00 PM",
     event: "Huntrix (Treasure Hunt)",
     venue: "Campus Wide",
     type: "non-technical"
   },
   {
+    time: "11:00 AM - 3:00 PM",
+    event: "ClutchCarnival (BGMI)",
+    venue: "IT Block",
+    type: "non-technical"
+  },
+  {
     time: "3:00 PM - 4:00 PM",
     event: "Prize Distribution & Closing",
-    venue: "Main Auditorium", 
+    venue: "IT Auditorium", 
     type: "general"
   }
 ];

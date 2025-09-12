@@ -20,10 +20,11 @@ const Index = () => {
       "CodeQuest": "/events/codequest",
       "BrainChain": "/events/brainchain",
       "Secret": "/events/secret",
-      "Huntrix": "/events/huntrix"
+      "Huntrix": "/events/huntrix",
+      "Clutch Carnival": "/events/clutchcarnival"
     };
     
-    navigate(eventRoutes[event.name]);
+    navigate(eventRoutes[event.name] ?? "/");
   };
 
   return (

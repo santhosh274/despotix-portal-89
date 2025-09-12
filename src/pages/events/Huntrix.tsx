@@ -118,7 +118,7 @@ const Huntrix = () => {
                       "Mobile phones strictly prohibited.",
                       "Follow safety guidelines and stay within the designated area.",
                       "The first team to solve all clues and reach the final destination wins.",
-                      "Judge's decision will be final."
+                      "Jury's decision will be final."
                     ].map((rule, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
@@ -152,7 +152,7 @@ const Huntrix = () => {
               <Card className="card-cosmic p-6 text-center">
                 <Trophy className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-orbitron font-semibold mb-2">Prizes</h3>
-                <p className="text-muted-foreground">₹2,000+ Prize Pool</p>
+                <p className="text-muted-foreground">Exciting Cash Prize 🎁</p>
               </Card>
             </motion.div>
 
