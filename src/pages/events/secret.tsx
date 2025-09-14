@@ -33,7 +33,15 @@ const Secret = () => {
 
             <p className="text-muted-foreground mt-8">
               If you decode the hidden message, whisper the phrase to{" "}
-              <span className="text-accent font-bold">Santhosh</span> in the department.
+              <a
+                href="www.linkedin.com/in/santhosh-kumarr-a-ace277"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent font-bold hover:underline"
+              >
+                Santhosh
+              </a>{" "}
+              in the department.
             </p>
           </Card>
         </motion.div>
