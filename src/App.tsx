@@ -13,7 +13,9 @@ import BrainChain from "./pages/events/BrainChain";
 import Huntrix from "./pages/events/Huntrix";
 import Clutchcarnival from "./pages/events/Clutchcarnival";
 import Secret from "./pages/events/secret";
-
+import { inject } from '@vercel/analytics';
+ 
+inject();
 const queryClient = new QueryClient();
 
 const App = () => (
